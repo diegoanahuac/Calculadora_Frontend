@@ -1,4 +1,4 @@
-import React, {createContext, useState, useEffect} from 'react'
+import React, {createContext, useReducer, useEffect} from 'react'
 import AppReducer from './AppReducer'
 
 // Initial state
@@ -16,7 +16,7 @@ export const GlobalContext = createContext(initialState)
 
 //Creamos el provedor
 export const GlobalProvider = ({children}) => {
-    const [state, dispatch] = useState(AppReducer, initialState)
+    const [state, dispatch] = useReducer(AppReducer, initialState)
 
     //Cargar datos al iniciar la aplicación
     useEffect(() => {
