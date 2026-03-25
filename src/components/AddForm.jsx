@@ -1,6 +1,5 @@
 import React, {useState, useContext} from 'react'
 import { GlobalContext } from '../context/GlobalState'
-import { set } from 'mongoose'
 
 const AddForm = () => {
 
@@ -22,7 +21,7 @@ const AddForm = () => {
         setDescripcion('')
         setImporte(0)
     }
-    
+
     return (
         <>
             <form onSubmit={onSubmit}>
