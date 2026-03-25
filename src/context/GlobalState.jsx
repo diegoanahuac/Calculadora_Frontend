@@ -9,7 +9,7 @@ const initialState = {
 }
 
 //URL de API
-const API_URL = 'https://calculadora-backend-2.onrender.com'
+const API_URL = 'https://calculadora-backend-2.onrender.com/api/gastos'
 
 //creamos el contexto
 export const GlobalContext = createContext(initialState)
